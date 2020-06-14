@@ -59,6 +59,7 @@ public class LaserScanner2D : MonoBehaviourRosNode
         scanPublisher = node.CreatePublisher<sensor_msgs.msg.LaserScan>(ScanTopic);
         StartCoroutine("TriggerScan");
         StartCoroutine("PublishScansIfOldEnough");
+
     }
 
     IEnumerator PublishScansIfOldEnough()
