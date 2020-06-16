@@ -19,30 +19,30 @@ Once the terminals are clean follow these steps:
 These are the main ROBIL files
 2. clone/download the repository --> https://github.com/ehud101/ros1_ws.git  
 This is a workspace for ROS1 overlay which contains the HECTOR-SLAM package modified for ROBIL.  
-**Important!** put the folder in your **$HOME** directory  
+**Important!** put the folder in your **$HOME** directory.  
 
 **In the follwoing steps you will open 4 terminal, to make things clearer will name them Terminal_1, Terminal_2....**  
 
 3. Open the file "**filesToSource/.bashrc_ros1**". set the **ROS_DISTRO** variable to your ROS1 distribution.  
 **Terminal_1:**  
-&nbsp;&nbsp;&nbsp;&nbsp;a. Open a new terminal and source the **bashrc_ros1** file. This will set the environment to ROS1.  
-&nbsp;&nbsp;&nbsp;&nbsp;b. run **roscore** . If you don't run the roscore, the rosbridge will fale to work since it is looking for it the moment it is executed.  
+&nbsp;&nbsp; a. Open a new terminal and source the **bashrc_ros1** file. This will set the environment to ROS1.  
+&nbsp;&nbsp; b. run **roscore** . If you don't run the roscore, the rosbridge will fale to work.  
 
 4. Open the file "**filesToSource/.bashrc_ros2**". set the **ROS_DISTRO** variable to your ROS2 distribution.  
 **Terminal_2:** Open a new terminal and source the **bashrc_ros2** file. This will set the environment to ROS2.  
 
 5. Open the file "**filesToSource/.bashrc_bridge**". make sure the two source lines point to your ROS1, and ROS2 correct paths respectively.  
 **Terminal_3:**  
-&nbsp;&nbsp;&nbsp;&nbsp;a. Open a new terminal and source the **bashrc_bridge** file.  
+&nbsp;&nbsp;a. Open a new terminal and source the **bashrc_bridge** file.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will set the environment to both ROS1 and ROS2 which is mandatory for ROS1_bridge to work.  
-&nbsp;&nbsp;&nbsp;&nbsp;b. after sourcing type the command: **"ros2 run ros1_bridge dynamic_bridge --bridge-all-2to1-topics"**   
+&nbsp;&nbsp;b. after sourcing type the command: **"ros2 run ros1_bridge dynamic_bridge --bridge-all-2to1-topics"**   
 &nbsp;&nbsp;&nbsp;&nbsp;This will run the ros1_bridge node and set it to automatically connect topic from both sides according to the methodology.  
 
 6. **Terminal_4:**  
-&nbsp;&nbsp;&nbsp;&nbsp;a. Open a new terminal and source again **.bashrc_ros1**. From this terminal we will run the HECTOR-SLAM  
-&nbsp;&nbsp;&nbsp;&nbsp;b. Run the command: "**rosparam set use_sim_time true**".  
+&nbsp;&nbsp;a. Open a new terminal and source again **.bashrc_ros1**. From this terminal we will run the HECTOR-SLAM  
+&nbsp;&nbsp;b. Run the command: "**rosparam set use_sim_time true**".  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tells ROS1 packages (such as HECOTR-SLAM and RVIZ) to use the time published in the clock topic. In ROBIL we publish in this topic the UNITY time.  
-&nbsp;&nbsp;&nbsp;&nbsp;c. Run the command: "**roslaunch hector_slam_launch robil_slam**"  
+&nbsp;&nbsp;c. Run the command: "**roslaunch hector_slam_launch robil_slam**"  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will launch a launch file which executes both RVIZ (where the SLAM map is displayed) and the HECTOR-SLAM itself.  
 
 7. Run the ROBIL4 project in Unity (direct unity to the **robil4** directory you cloned/downloaded)  
