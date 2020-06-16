@@ -42,7 +42,7 @@ This is a workspace for ROS1 overlay which contains the HECTOR-SLAM package modi
 &nbsp;&nbsp;a. Open a new terminal and source again **.bashrc_ros1**. From this terminal we will run the HECTOR-SLAM  
 &nbsp;&nbsp;b. Run the command: "**rosparam set use_sim_time true**".  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tells ROS1 packages (such as HECOTR-SLAM and RVIZ) to use the time published in the Clock topic. In ROBIL we publish UNITY time from the beginning of simulation.  
-&nbsp;&nbsp;c. Run the command: "**roslaunch hector_slam_launch robil_slam**"  
+&nbsp;&nbsp;c. Run the command: "**roslaunch hector_slam_launch robil_slam.launch**"  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A launch-file which executes both RVIZ (where the SLAM map is displayed) and the HECTOR-SLAM itself.  
 
 7. Open ROBIL4 project in Unity (the **robil4** directory you cloned/downloaded)  
