@@ -21,12 +21,12 @@ These are the main ROBIL files
 This is a workspace for ROS1 overlay which contains the HECTOR-SLAM package modified for ROBIL.  
 **Important!** put the folder in your **$HOME** directory.  
 
-**In the follwoing steps you will open 4 terminal, to make things clearer will name them Terminal_1, Terminal_2....**  
+**In the follwoing steps 4 Terminals will be used, to make things clearer let's name them Terminal_1, Terminal_2....**  
 
 3. Open the file "**filesToSource/.bashrc_ros1**". set the **ROS_DISTRO** variable to your ROS1 distribution.  
 **Terminal_1:**  
-&nbsp;&nbsp; a. Open a new terminal and source the **bashrc_ros1** file. This will set the environment to ROS1.  
-&nbsp;&nbsp; b. run **roscore** . If you don't run the roscore, the rosbridge will fale to work.  
+&nbsp;&nbsp;a. Open a new terminal and source the **bashrc_ros1** file. This will set the environment to ROS1.  
+&nbsp;&nbsp;b. run **roscore** . If you don't run the roscore, the rosbridge will fale to work.  
 
 4. Open the file "**filesToSource/.bashrc_ros2**". set the **ROS_DISTRO** variable to your ROS2 distribution.  
 **Terminal_2:** Open a new terminal and source the **bashrc_ros2** file. This will set the environment to ROS2.  
