@@ -11,7 +11,7 @@ Therefore, make sure that your terminal is not automatically set with any of ROS
 
 if it is set automatically try the flollowing:
 1. Remove any source command of ROS setup file from .bashrc file or any other file of this kind.
-2. Check the folder **opt/ros/melodic/etc/catkin/profile.d**
+2. Check the folder **opt/ros/(your ROS version)/etc/catkin/profile.d**
 This folder might be one of the places the o.s is looking for initial setting of environment variables.
 
 Once the terminals are clean follow these steps:
