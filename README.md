@@ -34,8 +34,8 @@ This is a workspace for ROS1 overlay which contains the HECTOR-SLAM package modi
 5. Open the file "**filesToSource/.bashrc_bridge**". make sure the two source lines point to your ROS1, and ROS2 correct paths respectively.  
 **Terminal_3:**  
 &nbsp;a. Open a new terminal and source the **bashrc_bridge** file.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will set the environment to both ROS1 and ROS2 which is mandatory for ROS1_bridge to work.  
-&nbsp;b. after sourcing type the command: **"ros2 run ros1_bridge dynamic_bridge --bridge-all-2to1-topics"**   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will set the environment to both ROS1 and ROS2 which is mandatory for ROS1_bridge to work.  
+&nbsp;&nbsp;b. after sourcing type the command: **"ros2 run ros1_bridge dynamic_bridge --bridge-all-2to1-topics"**   
 &nbsp;&nbsp;&nbsp;&nbsp;This will run the ros1_bridge node and set it to automatically connect topic from both sides according to the methodology.  
 
 6. **Terminal_4:**  
