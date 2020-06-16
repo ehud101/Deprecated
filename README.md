@@ -35,19 +35,19 @@ This is a workspace for ROS1 overlay which contains the HECTOR-SLAM package modi
 **Terminal_3:**  
 &nbsp;a. Open a new terminal and source the **bashrc_bridge** file.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will set the environment to both ROS1 and ROS2 which is mandatory for ROS1_bridge to work.  
-&nbsp;&nbsp;b. after sourcing type the command: **"ros2 run ros1_bridge dynamic_bridge --bridge-all-2to1-topics"**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will run the ros1_bridge node and set it to automatically connect topic from both sides according to the methodology.  
+&nbsp;&nbsp;b. Run the command: **"ros2 run ros1_bridge dynamic_bridge --bridge-all-2to1-topics"**   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will run the ros1_bridge node and set it to automatically bridge topics from both dierections
 
 6. **Terminal_4:**  
 &nbsp;&nbsp;a. Open a new terminal and source again **.bashrc_ros1**. From this terminal we will run the HECTOR-SLAM  
 &nbsp;&nbsp;b. Run the command: "**rosparam set use_sim_time true**".  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tells ROS1 packages (such as HECOTR-SLAM and RVIZ) to use the time published in the clock topic. In ROBIL we publish in this topic the UNITY time.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tells ROS1 packages (such as HECOTR-SLAM and RVIZ) to use the time published in the Clock topic. In ROBIL we publish UNITY time from the beginning of simulation.  
 &nbsp;&nbsp;c. Run the command: "**roslaunch hector_slam_launch robil_slam**"  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will launch a launch file which executes both RVIZ (where the SLAM map is displayed) and the HECTOR-SLAM itself.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A launch-file which executes both RVIZ (where the SLAM map is displayed) and the HECTOR-SLAM itself.  
 
-7. Run the ROBIL4 project in Unity (direct unity to the **robil4** directory you cloned/downloaded)  
+7. Open ROBIL4 project in Unity (the **robil4** directory you cloned/downloaded)  
 
-8. Hit the Play button in Unity. Now the beggining of an occupancy grid map should be displayed in RVIZ.
-move the robot in Uinty and watch the map built more and more.
+8. Hit the Play button in Unity. Now the beginning of map should be displayed in RVIZ (what the LIDAR "sees" at the beginning).
+move the robot in Unity and watch the map developes with time.
 
 Enjoy
