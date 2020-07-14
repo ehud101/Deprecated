@@ -13,6 +13,7 @@ public class LIDAR : MonoBehaviourRosNode
 {
     public string currentNodeName = "myScanner";
     public string scanTopic = "scanning";
+    public string frameID = "base_footprint";
     public float angleRes;
     public float minAngle;
     public float maxAngle;
@@ -20,7 +21,6 @@ public class LIDAR : MonoBehaviourRosNode
     public float maxRange;
     public Transform sensorRotator;
 
-    private string frameID;
     private Publisher<sensor_msgs.msg.LaserScan> LaserScanPublisher;
     private int oneCycleNumOfReadings;
     private float[] dist; //distance im m
@@ -44,7 +44,7 @@ public class LIDAR : MonoBehaviourRosNode
     }
 
     protected override void StartRos(){
-        frameID = "IBEO";
+        frameID = "base_footprint";
         angleRes = 0.9f;
         oneCycleNumOfReadings = Mathf.RoundToInt(360/angleRes);
         dist = new float[oneCycleNumOfReadings];

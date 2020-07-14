@@ -2057,7 +2057,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentNodeName: myScanner
-  scanTopic: scanning
+  scanTopic: scan
+  frameID: base_footprint
   angleRes: 0.9
   minAngle: 0
   maxAngle: 360
@@ -2469,6 +2470,49 @@ Transform:
   - {fileID: 1566136498}
   m_Father: {fileID: 12147607}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2023189375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023189377}
+  - component: {fileID: 2023189376}
+  m_Layer: 0
+  m_Name: OdomBaseTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2023189376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023189375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd8f2b54b593d5389a9d69be045f84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2023189377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023189375}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2854364, y: 1.4789672, z: -3.6148157}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2051640173
 GameObject:

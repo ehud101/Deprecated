@@ -10,11 +10,6 @@ public class ClockPublisher : MonoBehaviourRosNode
     private string currentNodeName = "unityTimer";
     private string clockTopic = "clock";
    
-   
-    // private Publisher<test_interfaces.msg.Clock> timePublisher;
-    // private test_interfaces.msg.Clock timeMessage;
-
-
     // private Publisher<builtin_interfaces.msg.Time> timePublisher;
     // private builtin_interfaces.msg.Time timeMessage;
 
