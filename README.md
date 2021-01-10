@@ -5,7 +5,7 @@ Since HECTOR is built to work in ROS1, This will require you to have both ROS1 a
 so you must have both ROS versions installed on your machine.
 2. All native ROS2 packages, including the ROS2 SLAM package --> SLAM Toolbox.
 
-# Running Robil with HECTOR-SLAM and ROS-Bridge
+# 1. Running Robil with HECTOR-SLAM and ROS-Bridge
 Since we are required to run both versions simultaneously, we must make sure that each terminal is set with **only one** of the versions environment (exept the ros_bridge). It should be absolutely clean from the other ones.
 Therefore, make sure that your terminal is not automatically set with any of ROS's environment variables. means that when you open a new terminal and check the current environment, none is related to ROS.
 
